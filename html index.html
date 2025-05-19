@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourism Places</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="startTourism()">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces" style="display:none;">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">Symbol of India's heritage.</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">Amritsar's sacred shrine.</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+            </div>
+
+            <button class="btn btn-dark" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionTajMahalDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                <p class="detailed-view-card-description">A wonder of Indo-Islamic architecture.</p>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionGoldenTempleDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                <p class="detailed-view-card-description">A sacred place in Punjab.</p>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
