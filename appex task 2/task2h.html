@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism Portal - Task 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Explore Tourism Spots</h1>
+  </header>
+  <nav>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#todo">To-Do</a>
+  </nav>
+  <div class="container">
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div>
+      <h2 id="gallery">Tourism Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach Sunset" title="Beach Sunset" />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountain View" title="Mountain View" />
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="City Lights" title="City Lights" />
+      </div>
+
+      <div class="todo" id="todo">
+        <h2>Travel To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Add a task..." />
+        <button onclick="addTodo()">Add</button>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
