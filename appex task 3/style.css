@@ -1,0 +1,73 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.booking-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e85c00;
+}

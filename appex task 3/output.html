@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <div class="booking-container">
+        <h2>Book Your Dream Trip</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone Number" required pattern="[0-9]{10}" />
+          <select required>
+            <option value="">Select Destination</option>
+            <option>Bali</option>
+            <option>Maldives</option>
+            <option>Paris</option>
+            <option>Tokyo</option>
+          </select>
+          <label>Check-In Date</label>
+          <input type="date" required />
+          <label>Check-Out Date</label>
+          <input type="date" required />
+          <textarea placeholder="Special Requests" rows="3"></textarea>
+          <button type="submit">Book Now</button>
+        </form>
+        <output id="confirmation"></output>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
