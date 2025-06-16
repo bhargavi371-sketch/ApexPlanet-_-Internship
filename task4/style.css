@@ -1,0 +1,57 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #00aaff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.todo, .products {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 90%;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}

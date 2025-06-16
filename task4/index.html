@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tourism Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Explore & Discover Tourism</h1>
+    <nav>
+      <button onclick="showPage('about')">About</button>
+      <button onclick="showPage('projects')">Projects</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="page">
+    <h2>About Us</h2>
+    <p>We provide amazing tourism experiences across the globe. From serene beaches to bustling cities, we craft unforgettable journeys just for you.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="page hidden">
+    <h2>Our Projects</h2>
+
+    <!-- To-Do List -->
+    <div class="todo">
+      <h3>Trip Planning Notes</h3>
+      <input type="text" id="noteInput" placeholder="Add a new note"/>
+      <button onclick="addNote()">Add Note</button>
+      <ul id="noteList"></ul>
+    </div>
+
+    <!-- Product Listing -->
+    <div class="products">
+      <h3>Tour Packages</h3>
+      <select onchange="filterProducts()" id="filterSelect">
+        <option value="all">All</option>
+        <option value="adventure">Adventure</option>
+        <option value="leisure">Leisure</option>
+      </select>
+      <select onchange="sortProducts()" id="sortSelect">
+        <option value="default">Sort By</option>
+        <option value="price">Price</option>
+      </select>
+      <div id="productList"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="page hidden">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitContact(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="contactMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tourism Co. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
